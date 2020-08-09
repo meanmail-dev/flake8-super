@@ -8,7 +8,7 @@ requires = [
 flake8_entry_point = 'flake8.extension'
 
 setuptools.setup(
-    name="flake8_example",
+    name="flake8_super",
     license="MIT",
     version="0.1.0",
     description="Python 3 super() check for flake8",
