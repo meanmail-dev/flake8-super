@@ -39,4 +39,5 @@ class SomeClass:
 # Links
 
 https://github.com/meanmail/flake8-super
+
 https://meanmail.dev/
