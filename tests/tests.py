@@ -5,7 +5,8 @@ from flake8_super.plugin import SuperPluginError, SuperPluginVisitor
 code_with_error = """
 class Y:
   def __init__():
-    super(Y, self).__init()
+    super(Y, self).__init__()
+    some_method()
 """
 
 
@@ -16,7 +17,8 @@ def test_code_with_error():
 code_without_error = """
 class Y:
   def __init__():
-    super().__init()
+    super().__init__()
+    some_method()
 """
 
 

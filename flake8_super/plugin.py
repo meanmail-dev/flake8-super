@@ -11,7 +11,11 @@ class SuperPluginError(Error):
 
 class SuperPluginVisitor(Visitor):
     def visit_Call(self, node: Call) -> Any:
-        self.error_from_node(SuperPluginError, node)
+        func = node.func
+        value = getattr(func, 'value', None)
+
+        if value and value.func.id == 'super' and value.args:
+            self.error_from_node(SuperPluginError, node)
 
 
 class SuperPlugin(Plugin):

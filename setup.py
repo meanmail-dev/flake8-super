@@ -9,8 +9,8 @@ flake8_entry_point = 'flake8.extension'
 
 setuptools.setup(
     name="flake8_example",
-    license="Apache",
-    version="2.0",
+    license="MIT",
+    version="0.1.0",
     description="Python 3 super() check for flake8",
     author="meanmail",
     author_email="example@example.com",
@@ -28,7 +28,7 @@ setuptools.setup(
         "Framework :: Flake8",
         "Environment :: Console",
         "Intended Audience :: Developers",
-        "License :: OSI Approved :: Apache License",
+        "License :: OSI Approved :: MIT License",
         "Programming Language :: Python",
         "Programming Language :: Python :: 3",
         "Topic :: Software Development :: Libraries :: Python Modules",
