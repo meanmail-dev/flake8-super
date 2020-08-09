@@ -1,4 +1,10 @@
 # flake8-super
+![PyPI - Downloads](https://img.shields.io/pypi/dm/flake8-super?color=blue&label=PyPi%20downloads)
+![PyPI](https://img.shields.io/pypi/v/flake8-super)
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/flake8-super)
+![PyPI - Wheel](https://img.shields.io/pypi/wheel/flake8-super)
+![PyPI - Implementation](https://img.shields.io/pypi/implementation/flake8-super)
+
 Python 3 super() check for flake8
 
 # Installation
