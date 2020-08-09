@@ -1,3 +1,5 @@
+from pathlib import Path
+
 import setuptools
 
 requires = [
@@ -7,11 +9,16 @@ requires = [
 
 flake8_entry_point = 'flake8.extension'
 
+this_directory = Path(__file__).parent.resolve()
+long_description = (this_directory / 'README.md').read_text()
+
 setuptools.setup(
     name="flake8_super",
     license="MIT",
-    version="0.1.0",
+    version="0.1.1",
     description="Python 3 super() check for flake8",
+    long_description=long_description,
+    long_description_content_type='text/markdown',
     author="meanmail",
     author_email="example@example.com",
     url="https://github.com/meanmail/flake8-super",
