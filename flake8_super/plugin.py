@@ -1,4 +1,4 @@
-from _ast import Call
+from _ast import Call, Name
 from typing import Any
 
 from flake8_plugin_utils import Error, Plugin, Visitor
@@ -11,14 +11,15 @@ class SuperPluginError(Error):
 
 class SuperPluginVisitor(Visitor):
     def visit_Call(self, node: Call) -> Any:
-        func = node.func
-        value = getattr(func, 'value', None)
-
-        if value and value.func.id == 'super' and value.args:
+        if (isinstance(node.func, Name) and
+            node.func.id == 'super' and
+            node.args):
             self.error_from_node(SuperPluginError, node)
+
+        return self.generic_visit(node)
 
 
 class SuperPlugin(Plugin):
     name = 'SuperPlugin'
-    version = '0.1.0'
+    version = '0.1.2'
     visitors = [SuperPluginVisitor]
