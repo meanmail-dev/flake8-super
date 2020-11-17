@@ -1,5 +1,5 @@
 # flake8-super
-[![Downloads](https://pepy.tech/badge/flake8-super/month)](https://pepy.tech/project/flake8-super/month)
+[![Downloads](https://pepy.tech/badge/flake8-super/month)](https://pepy.tech/project/flake8-super)
 ![PyPI](https://img.shields.io/pypi/v/flake8-super)
 ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/flake8-super)
 ![PyPI - Wheel](https://img.shields.io/pypi/wheel/flake8-super)
