@@ -15,7 +15,7 @@ long_description = (this_directory / 'README.md').read_text()
 setuptools.setup(
     name="flake8_super",
     license="MIT",
-    version="0.1.2",
+    version="0.1.3",
     description="Python 3 super() check for flake8",
     long_description=long_description,
     long_description_content_type='text/markdown',
